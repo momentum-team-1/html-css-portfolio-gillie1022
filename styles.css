@@ -56,17 +56,26 @@ header {
   margin: 0em;
 }
 
-/* .homepageArticle  */
 h2 {
   font-size: 2em;
   margin: 0.2em 0em;
 }
 
-.hello{
-    margin-top: 0em;
-    font-size: 1.5em;
+.hello {
+  margin-top: 0em;
+  font-size: 1.5em;
 }
 
 .homeSummary {
   margin: 0px;
+}
+
+.projectCard{
+    display: flex;
+    flex-flow: column;
+
+}
+
+.projectName{
+    width: 50%;
 }
