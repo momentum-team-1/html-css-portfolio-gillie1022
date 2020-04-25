@@ -70,12 +70,34 @@ h2 {
   margin: 0px;
 }
 
-.projectCard{
-    display: flex;
-    flex-flow: column;
+.projectCard {
+  display: grid;
+  grid-template-columns: [leftEdge] 1fr [line2] 1fr [line3] 5% [line4] 1fr [line5] 1fr [rightEdge];
+  grid-template-rows: [topEdge] auto [row1-end] auto [row2-end] auto [bottomEdge];
+}
+
+.projectName {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.projectSummary {
+  grid-column: 1 / span 2;
+  grid-row: 2;
 
 }
 
-.projectName{
-    width: 50%;
+.projectPic {
+  grid-column: 4 / span 2;
+  grid-row: 1 / 4;
+  place-self: center right;
+}
+
+.projectNav {
+  grid-row: 3;
+  grid-column-start: 1 / span 2;
+}
+.projectNav a {
+  background-color: peru;
+  padding: 3px;
 }
