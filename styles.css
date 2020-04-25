@@ -1,20 +1,93 @@
-header{
+@media (min-width: 576px) and (max-width: 828px) {
+  header {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #pageHeader {
+      justify-content: center;
+    width: 100%;
+    display: flex;
+    margin: 15px 0px;
+  }
+
+  .siteNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+
+  .navButton {
+    text-decoration: none;
+    background-color: paleturquoise;
+    padding: 2px;
+  }
+
+  .homeSection {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profilePic {
+    width: 45%;
+  }
+
+  #profilePic {
+    width: 100%;
+  }
+
+  .homepageArticle {
+    width: 45%;
+  }
 }
 
-#pageHeader{ 
-    width: 50%;
+@media (min-width: 829px) {
+  header {
+    width: 100%;
     display: flex;
-margin: 15px 0px;}
+    justify-content: space-between;
+  }
 
-.siteNav{
-    width: 50%;
+  #pageHeader {
+    width: 45%;
+    display: flex;
+    margin: 15px 0px;
+  }
+
+  .siteNav {
+    width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 15px;
     font-size: 1.5em;
-    text-decoration: none;
+  }
 
+  .navButton {
+    text-decoration: none;
+    background-color: paleturquoise;
+    padding: 2px;
+  }
+
+  .homeSection {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profilePic {
+    width: 45%;
+  }
+
+  #profilePic {
+    width: 100%;
+  }
+
+  .homepageArticle {
+    width: 45%;
+  }
 }
