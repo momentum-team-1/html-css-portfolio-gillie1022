@@ -1,5 +1,18 @@
 body {
-  margin: 0em 2em;
+  padding: 0em 1em;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+h3 {
+  font-size: 2vw;
+}
+
+p {
+  font-size: 1.5vw;
+  line-height: 1.5vw;
 }
 
 header {
@@ -10,24 +23,23 @@ header {
   margin: auto;
 }
 
-#pageHeader {
+.siteHeader {
   width: 50%;
   margin: 15px 0px;
 }
 
 .siteNav {
-  width: 25%;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
   margin-bottom: 15px;
-  font-size: 1.5em;
 }
 
 .navButton {
+  margin: 0em 1em 0em 0em;
+  font-size: 1.5em;
   text-decoration: none;
-  background-color: paleturquoise;
-  padding: 2px;
 }
 
 .homeSection {
@@ -39,40 +51,53 @@ header {
   margin-top: 1.5em;
 }
 
+#profilePic {
+  width: 100%;
+  align-content: center;
+}
+
 .profilePic {
   width: 48%;
 }
 
-#profilePic {
-  width: 100%;
-}
-
 .homepageArticle {
-  width: 48%;
+  width: 50%;
 }
 
-.pageTitle {
-  font-size: 3em;
-  margin: 0em;
-}
+@media screen and (max-width: 1023px) {
+  .siteHeader {
+    width: 100%;
+  }
 
-h2 {
-  font-size: 2em;
-  margin: 0.2em 0em;
-}
+  .siteNav {
+    width: 100%;
+    justify-content: flex-start;
+  }
 
-.hello {
-  margin-top: 0em;
-  font-size: 1.5em;
-}
+  .profilePic {
+    width: 100%;
+  }
 
-.homeSummary {
-  margin: 0px;
-}
+  .homepageArticle {
+    width: 100%;
+  }
 
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+}
 .projectCard {
   display: grid;
-  grid-template-columns: [leftEdge] 1fr [line2] 1fr [line3] 5% [line4] 1fr [line5] 1fr [rightEdge];
+  grid-template-columns: [leftEdge] 24% [line2] 24% [line3] 4% [line4] 24% [line5] 24% [rightEdge];
   grid-template-rows: [topEdge] auto [row1-end] auto [row2-end] auto [bottomEdge];
 }
 
@@ -84,13 +109,16 @@ h2 {
 .projectSummary {
   grid-column: 1 / span 2;
   grid-row: 2;
-
 }
 
 .projectPic {
   grid-column: 4 / span 2;
   grid-row: 1 / 4;
-  place-self: center right;
+}
+
+.projectPic img{
+  width: 100%;
+
 }
 
 .projectNav {
@@ -101,3 +129,15 @@ h2 {
   background-color: peru;
   padding: 3px;
 }
+
+@media screen and (max-width: 1023px){
+  .projectCard {
+    display:flex;
+    flex-wrap: wrap;
+
+  }
+  .projectPic{
+    width: 100%;
+  }
+}
+
