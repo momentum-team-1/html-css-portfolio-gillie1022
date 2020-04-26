@@ -141,3 +141,11 @@ header {
   }
 }
 
+.resume{
+  display: flex;
+  flex-flow: wrap;
+}
+
+#resumeTitle{
+  width:50%;
+}
